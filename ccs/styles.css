@@ -1,6 +1,24 @@
 :root {
   --accent-color: #2196f3;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -11,8 +29,46 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ======= HEADER ======= */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .logo-part {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -21,7 +77,8 @@ body {
   letter-spacing: 0.03em;
   color: black;
 }
-.logo-link {
+.logo-link-header {
+  margin-right: 95px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -66,7 +123,12 @@ body {
 /* ======= END HEADER ======== */
 
 /* ======= HERO ======= */
+.hero-container {
+  background-color: #2f303a;
+  height: 600px;
+}
 .hero-title {
+  padding: 200px 252px 30px 252px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -77,6 +139,12 @@ body {
   color: #ffffff;
 }
 .modal-btn {
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -92,11 +160,22 @@ body {
 
 /* ======= ADVANTAGES ======= */
 .advant-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.advant-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advant-list-item {
+  width: 270px;
+}
+.advant-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .advant-text {
   font-size: 14px;
@@ -107,22 +186,42 @@ body {
 /* ======= ADVANTAGES END ======= */
 /* ======= OCCUPATION ======= */
 .occup-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.occup-list {
+  display: flex;
+  margin-right: -30px;
+}
+.occup-list-item {
+  flex-basis: calc ((100% - 90px / 3));
+  margin-right: 30px;
 }
 /* ======= OCCUPATION END ======= */
 /* ======= TEAM ======= */
 .main-team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team-list {
+  display: flex;
+  margin-right: -30px;
+}
+.team-list-item {
+  flex-basis: calc((100% - 120px / 4));
+  margin-right: 30px;
+}
 .secondary-team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -130,6 +229,7 @@ body {
   letter-spacing: 0.03em;
 }
 .team-profession {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -138,6 +238,21 @@ body {
 }
 /* ======= TEAM END ======= */
 /* ======= FOOTER ======= */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  background-color: #2f303a;
+}
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
 .logo-part-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -145,6 +260,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+.contacts-list {
+  margin-top: 20px;
+}
+.contacts-list-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 .contact-link-address {
   font-style: normal;
@@ -170,7 +291,18 @@ body {
 }
 /* ======= FOOTER END ======= */
 /* ======= PORTFOLIO PROJECTS ======= */
+.navi-list {
+  display: flex;
+  justify-content: space-between;
+  width: 610px;
+  margin-left: 280px;
+  margin-right: 280px;
+  margin-bottom: 35px;
+}
 .portfolio-btn {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -183,14 +315,29 @@ body {
   background-color: #2196f3;
   color: #fff;
 }
-
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.projects-item {
+  flex-basis: calc ((100% - 90px / 3));
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-info {
+  border: 1px solid #ececec;
+}
 .projects-title {
+  padding: 20px 24px 4px 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects-text {
+  padding: 4px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
