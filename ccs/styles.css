@@ -36,14 +36,13 @@ body {
   padding-right: 15px;
 }
 .section {
-  width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 /* ======= HEADER ======= */
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -124,12 +123,15 @@ body {
 
 /* ======= HERO ======= */
 .hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: #2f303a;
   height: 600px;
 }
 .hero-title {
-  padding: 200px 252px 30px 252px;
-  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -140,7 +142,6 @@ body {
 }
 .modal-btn {
   margin: 0 auto;
-  margin-bottom: 200px;
   padding: 10px 32px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -203,6 +204,9 @@ body {
 }
 /* ======= OCCUPATION END ======= */
 /* ======= TEAM ======= */
+.team-container {
+  background-color: #f5f4fa;
+}
 .main-team-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -220,7 +224,6 @@ body {
   margin-right: 30px;
 }
 .secondary-team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -229,12 +232,19 @@ body {
   letter-spacing: 0.03em;
 }
 .team-profession {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.team-card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* ======= TEAM END ======= */
 /* ======= FOOTER ======= */
@@ -327,17 +337,17 @@ body {
   margin-bottom: 30px;
 }
 .projects-info {
+  padding: 20px 24px;
   border: 1px solid #ececec;
 }
 .projects-title {
-  padding: 20px 24px 4px 24px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects-text {
-  padding: 4px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
